@@ -1,0 +1,36 @@
+{% load static %}
+
+<link rel = 'stylesheet' href="{%static 'style.css' %}">
+
+{% if user.is_authenticated %}
+<h1>Welcome , {{user.username}} </h1>
+{% else %}
+<h1>Welcome , Stranger </h1>
+{% endif %}
+
+
+<div >
+<form action="counter/" method="POST">
+    {% csrf_token %}
+    <textarea name="text" id="" rows='10' , cols="50"></textarea>
+    <br>
+    <br>
+    <input type="submit"></input>
+</form>
+
+<div class = 'userInfo'>
+{% for feature in features %}
+{% if feature.age >= 18%}
+<div class="infoBox">
+    <h1>User Information</h1>
+    <h2>Name : {{feature.name}}</h2>
+    <h2>Age : {{feature.age}}</h2>
+    <h2>Description: {{feature.details}}</h2>
+</div>
+{% endif %}
+{% endfor %}
+</div>
+
+<button class="logoutButton"> <a href="logout"> Log Out </a>  </button>
+
+</div>

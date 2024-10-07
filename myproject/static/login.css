@@ -1,0 +1,42 @@
+.inputBlock {
+  display: flex;
+  padding: 2%;
+}
+
+.inputBlock input {
+  margin-top: 15px;
+  margin-left: 5px;
+  height: 100%;
+}
+
+.submitButton {
+  margin-top: 5px;
+  width: 80px;
+  padding: 7px;
+  border-radius: 12px;
+  background-color: rgb(138, 53, 218);
+  border: none;
+  color: rgb(247, 243, 243);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 80px;
+}
+
+h5 {
+  color: red;
+  font-size: 20px;
+}
+
+.outerCover {
+  margin-left: 35%;
+  margin-top: 10%;
+  width: 30%;
+  border-radius: 12px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(191, 240, 255);
+}

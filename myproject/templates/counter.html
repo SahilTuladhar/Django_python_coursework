@@ -1,0 +1,12 @@
+{% load static %}
+
+<link rel="stylesheet" href="{%static 'counter.css' %}" />
+
+<div class="outerCover">
+  {% for post in posts %}
+  <div class="infoBox">
+    <h3><a href="{% url 'post' post.title %}">Title : {{post.title}}</a></h3>
+    <p>{{post.description}}</p>
+  </div>
+  {% endfor %}
+</div>

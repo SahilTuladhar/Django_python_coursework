@@ -1,0 +1,21 @@
+.inputBlock {
+  padding: 2%;
+}
+
+.submitButton {
+  width: 80px;
+  padding: 7px;
+  border-radius: 12px;
+  background-color: rgb(138, 53, 218);
+  border: none;
+  color: rgb(247, 243, 243);
+}
+
+h5 {
+  color: red;
+  font-size: 20px;
+}
+
+.outerCover {
+  border: 1px solid black;
+}

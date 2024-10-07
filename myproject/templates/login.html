@@ -1,0 +1,36 @@
+{% load static %}
+
+<link rel="stylesheet" href="{%static 'login.css' %}" />
+
+{% for message in messages %}
+<h5>{{message}}</h5>
+{% endfor %}
+
+<div class="outerCover">
+  <h1>Log in</h1>
+
+  <form action="{% url 'login' %}" method="POST">
+    {% csrf_token %}
+
+    <div class="inputBlock">
+      <p>Username:</p>
+      <input type="text" name="username" />
+    </div>
+
+    <div class="inputBlock">
+      <p>Password:</p>
+      <input type="password" name="password" />
+    </div>
+
+    <button type="submit" class="submitButton">Log In</button>
+
+    <p>
+      Don't have an account yet?
+      <a
+        href="register"
+        style="cursor: pointer; color: blue; text-decoration: underline"
+        >Create one</a
+      >
+    </p>
+  </form>
+</div>

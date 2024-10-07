@@ -1,0 +1,60 @@
+.outerCover {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+h1 {
+  color: blue;
+  transition: color 1s;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+h1:hover {
+  color: red;
+}
+
+.infoBox {
+  height: 220px;
+  width: 250px;
+  padding: 1%;
+  margin: 2%;
+  border: 1px solid black;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  transition: height 1s, width 1s, background-color 1s;
+}
+
+.infoBox:hover {
+  width: 257px;
+  height: 227px;
+  background-color: antiquewhite;
+}
+
+.userInfo {
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+}
+
+h2 {
+  font-size: 10px;
+}
+
+p {
+  cursor: pointer;
+}
+
+.logoutButton {
+  width: 80px;
+  padding: 7px;
+  border-radius: 12px;
+  background-color: rgb(138, 53, 218);
+  border: none;
+  color: rgb(247, 243, 243);
+}
